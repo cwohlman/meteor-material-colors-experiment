@@ -1,0 +1,25 @@
+#!/bin/bash
+
+USEFUL_ENV=$1;
+
+if [ -z "$USEFUL_ENV" ]; then
+  USEFUL_ENV="development";
+fi
+
+echo "Starting USEFUL PROJECT TEMPLATE in $USEFUL_ENV"; 
+
+case "$USEFUL_ENV" in
+  "development" )
+    export ROOT_URL='http://localhost:3000'
+    # export MONGO_URL="mongodb://127.0.0.1:3002/useful"
+    mrt run --settings config/development.json
+    ;;
+  "staging" )
+    export ROOT_URL="http://localhost:3000"
+    # export MONGO_URL="mongodb://127.0.0.1:3002/useful"
+    mrt run --settings config/development.json
+    ;;
+  "production" )
+    echo "production mode";
+    ;;
+esac
