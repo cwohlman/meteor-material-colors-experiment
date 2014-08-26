@@ -1,0 +1,21 @@
+<head>
+  <title>meteor-material-colors-experiment</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+	<div class="container">
+		{{#each colors}}
+			<div class="row color-{{this}}">
+				{{#each weights}}
+					<div class="col-sm-1 box color-weight-{{this}} color-background"></div>
+				{{/each}}
+			</div>
+		{{/each}}
+	</div>
+</template>
