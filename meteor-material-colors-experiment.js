@@ -25,7 +25,7 @@ if (Meteor.isClient) {
       , "grey"
       , "blue-grey"
     ]
-    , weights: _.range(1, 15)
+    , weights: _.range(1, 10)
   });
 
 }

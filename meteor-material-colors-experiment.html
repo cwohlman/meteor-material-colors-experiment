@@ -11,9 +11,11 @@
 <template name="hello">
 	<div class="container">
 		{{#each colors}}
-			<div class="row color-{{this}}">
+			<div class="row">
 				{{#each weights}}
-					<div class="col-sm-1 box color-weight-{{this}} color-background"></div>
+					<div class="col-sm-1 box {{..}}-{{this}}-background">
+						{{..}} - {{this}}
+					</div>
 				{{/each}}
 			</div>
 		{{/each}}
