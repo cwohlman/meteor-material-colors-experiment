@@ -1,1 +1,0 @@
-Collection definitions and before/after hooks go here. Also any related constants can go here.

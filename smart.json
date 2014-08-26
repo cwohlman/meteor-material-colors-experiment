@@ -1,8 +1,5 @@
 {
   "packages": {
-    "useful": {
-      "git": "git@github.com:usefulio/meteor-useful-package.git",
-      "branch": "devel"
-    }
+    "bootstrap-3": {}
   }
 }
